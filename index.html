@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+
+            <div class="header__wrapper wrapper">
+                <a href="#" class="header__logo">
+                    <img src="img/Logo.svg" alt="Logotype">
+                </a>
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li><a href="#servises" class="menu-link">Services</a></li>
+                        <li><a href="#portfolios" class="menu-link">Portfolios</a></li>
+                        <li><a href="#expirience" class="menu-link">Experience</a></li>
+                        <li><a href="#blog" class="menu-link">Blog</a></li>
+
+                        <li id="menu-dots" class="menu-link"><span>...</span>
+                            <ul class="menu-dropdown">
+                                <li class="dropdown-link"><a href="#testimonials" class="menu-link">Testimonials</a></li>
+                                <li class="dropdown-link"><a href="#educate" class="menu-link">Educate</a></li>
+                                <li class="dropdown-link"><a href="#contacts" class="menu-link">Contacts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="cv-btn">Resume</button>
+                <div class="icon__menu">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="wrapper">
+            <section class="introduce section" id="introduce">
+                <div class="introduce__content-text">
+                    <div class="header_block">
+                        <span>My name is</span>
+                        <h1>Alex <span>Smith.</span></h1>
+                    </div>
+                    <p>Creative front-end developer with more than +5 years of experience in enterprise companies and
+                        startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX</p>
+                    <div class="introduce__content-social">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="introduce__content-img">
+                    <img src="img/persona.jpg" alt="persona">
+                </div>
+            </section>
+        </div>
+
+        <section class="servises section" id="servises">
+            <div class="wrapper">
+                <div class="section__header">
+                    <div class="header_block">
+                        <span>Services</span>
+                        <h2>Specialized in</h2>
+                    </div>
+                </div>
+                <div class="servises__content">
+                    <div class="servises__content-item">
+                        <div class="servises__content-img">
+                            <img src="img/crown.svg" alt="crown">
+                        </div>
+                        <h6>UI/UX Design</h6>
+                        <p>
+                            Turn what you have in mind of a digital product into reality. For any platform you
+                            consider.
+                        </p>
+                    </div>
+                    <div class="servises__content-item">
+                        <div class="servises__content-img">
+                            <img src="img/app.svg" alt="app">
+                        </div>
+                        <h6>Application Development</h6>
+                        <p>
+                            Standard designing, building, and implementing your applications with documentation.
+                        </p>
+                    </div>
+                    <div class="servises__content-item">
+                        <div class="servises__content-img">
+                            <img src="img/globe.svg" alt="globe">
+                        </div>
+                        <h6>Web Development</h6>
+                        <p>
+                            Create and maintain your websites and also take care of its performance and traffic
+                            capacity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolios section" id="portfolios">
+            <div class="wrapper">
+                <div class="section__header">
+                    <div class="header_block">
+                        <span>My works</span>
+                        <h2>Featured Portfolios</h2>
+                    </div>
+                    <div class="portfolios__arrows">
+                        <i class="fa-solid fa-circle-chevron-left portfolios__arrows-left"></i>
+                        <i class="fa-solid fa-circle-chevron-right portfolios__arrows-right"></i>
+                    </div>
+                </div>
+
+                <div class="portfolios__content swiper">
+                    <div class="swiper-wrapper">
+                        <div class="portfolios__item swiper-slide">
+                            <div class="portfolios__item-img">
+                                <img src="/img/portfolio_01.jpg" alt="portfolio_01">
+                            </div>
+                            <div class="portfolios__item-text">
+                                <h6><a href="#">Agency Website.</a></h6>
+                                <a href="#" class="portfolios__item-link">WordPress</a>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="portfolios__item swiper-slide">
+                            <div class="portfolios__item-img">
+                                <img src="/img/portfolio_02.jpg" alt="portfolio_02">
+                            </div>
+                            <div class="portfolios__item-text">
+                                <h6><a href="#">Dashboard Website.</a></h6>
+                                <a href="#" class="portfolios__item-link">React</a>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="portfolios__item swiper-slide">
+                            <div class="portfolios__item-img">
+                                <img src="/img/portfolio_03.jpg" alt="portfolio_03">
+                            </div>
+                            <div class="portfolios__item-text">
+                                <h6><a href="#">Support Center Website.</a></h6>
+                                <a href="#" class="portfolios__item-link">PHP</a>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="portfolios__item swiper-slide">
+                            <div class="portfolios__item-img">
+                                <img src="/img/portfolio_01.jpg" alt="portfolio_01">
+                            </div>
+                            <div class="portfolios__item-text">
+                                <h6><a href="#">Agency Website.</a></h6>
+                                <a href="#" class="portfolios__item-link">WordPress</a>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="portfolios__item swiper-slide">
+                            <div class="portfolios__item-img">
+                                <img src="/img/portfolio_02.jpg" alt="portfolio_02">
+                            </div>
+                            <div class="portfolios__item-text">
+                                <h6><a href="#">Dashboard Website.</a></h6>
+                                <a href="#" class="portfolios__item-link">React</a>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="portfolios__item swiper-slide">
+                            <div class="portfolios__item-img">
+                                <img src="/img/portfolio_03.jpg" alt="portfolio_03">
+                            </div>
+                            <div class="portfolios__item-text">
+                                <h6><a href="#">Support Center Website.</a></h6>
+                                <a href="#" class="portfolios__item-link">PHP</a>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="expirience section" id="expirience">
+            <div class="wrapper">
+                <div class="expirience__content">
+                    <div class="header_block">
+                        <span>Career path</span>
+                        <h2>Work Experices</h2>
+                    </div>
+                    <div class="expirience__content-tabs">
+                        <button class="expirience__content-tab active" data-firm="apple">Apple <i class="icon-right"></i></button>
+                        <button class="expirience__content-tab" data-firm="microsoft">Microsoft</button>
+                        <button class="expirience__content-tab" data-firm="facebook">Facebook</button>
+                        <button class="expirience__content-tab" data-firm="slack">Slack</button>
+                    </div>
+                    <div class="expirience__content-items">
+                        <div class="expirience__content-item firm__apple tabs active">
+                            <div class="expirience__content-staff">
+                                <h5>Front-end Developer <a href="">Apple .Inc</a></h5>
+                                <span class="adress">California, United States</span>
+                                <span class="period">Nov 2020 - Present · Full-time</span>
+                                <div class="expirience__content-staff-links">
+                                    <a href="" class="portfolios__item-link">Swift</a>
+                                    <a href="" class="portfolios__item-link">Go</a>
+                                </div>
+                            </div>
+                            <div class="expirience__content-duty">
+                                <ul class="expirience__content-duty-list">
+                                    <li>Improving overall website performance for mobile users.</li>
+                                    <li>Collaborate with back-end developers and web designers to improve usability</li>
+                                    <li>Add voice search feature for mobile app.</li>
+                                    <li>Developing an admin panel to manage contents, users, products and Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem, cum ullam in voluptatum tenetur accusamus iure sed nobis modi.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="expirience__content-item firm__microsoft tabs">
+                            <div class="expirience__content-staff">
+                                <h5>Front-end Developer <a href="">Microsoft</a></h5>
+                                <span class="adress">California, United States</span>
+                                <span class="period">Nov 2020 - Present · Full-time</span>
+                                <div class="expirience__content-staff-links">
+                                    <a href="" class="portfolios__item-link">Swift</a>
+                                    <a href="" class="portfolios__item-link">Go</a>
+                                </div>
+                            </div>
+                            <div class="expirience__content-duty">
+                                <ul class="expirience__content-duty-list">
+                                    <li>Improving overall website performance for mobile users.</li>
+                                    <li>Collaborate with back-end developers and web designers to improve usability</li>
+                                    <li>Add voice search feature for mobile app.</li>
+                                    <li>Developing an admin panel to manage contents, users, products and ...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="expirience__content-item firm__facebook tabs">
+                            <div class="expirience__content-staff">
+                                <h5>Front-end Developer <a href="">Facebook</a></h5>
+                                <span class="adress">California, United States</span>
+                                <span class="period">Nov 2020 - Present · Full-time</span>
+                                <div class="expirience__content-staff-links">
+                                    <a href="" class="portfolios__item-link">Swift</a>
+                                    <a href="" class="portfolios__item-link">Go</a>
+                                </div>
+                            </div>
+                            <div class="expirience__content-duty">
+                                <ul class="expirience__content-duty-list">
+                                    <li>Improving overall website performance for mobile users.</li>
+                                    <li>Collaborate with back-end developers and web designers to improve usability</li>
+                                    <li>Add voice search feature for mobile app.</li>
+                                    <li>Developing an admin panel to manage contents, users, products and ...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="expirience__content-item firm__slack tabs">
+                            <div class="expirience__content-staff">
+                                <h5>Front-end Developer <a href="">Slack</a></h5>
+                                <span class="adress">California, United States</span>
+                                <span class="period">Nov 2020 - Present · Full-time</span>
+                                <div class="expirience__content-staff-links">
+                                    <a href="" class="portfolios__item-link">Swift</a>
+                                    <a href="" class="portfolios__item-link">Go</a>
+                                </div>
+                            </div>
+                            <div class="expirience__content-duty">
+                                <ul class="expirience__content-duty-list">
+                                    <li>Improving overall website performance for mobile users.</li>
+                                    <li>Collaborate with back-end developers and web designers to improve usability</li>
+                                    <li>Add voice search feature for mobile app.</li>
+                                    <li>Developing an admin panel to manage contents, users, products and ...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog section" id="blog">
+            <div class="wrapper">
+                <div class="section__header">
+                    <div class="header_block">
+                        <span>My Articles</span>
+                        <h2>Personal Blog</h2>
+                    </div>
+                </div>
+                <div class="blog__content">
+                    <article class="blog__item">
+                        <div class="blog__item-img">
+                            <img src="/img/blog_01.jpg" alt="blog_01">
+                        </div>
+                        <div class="blog__item-text">
+                            <div class="blog__item-header">
+                                <h6><a href="#">How to prototype in figma</a></h6>
+                                <time datetime="2021-06-15">July 15, 2021</time>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante
+                                scelerisque laoreet. Fusce finibus ...
+                            </p>
+                            <a href="#" class="blog__item-link">Continue Reading</a>
+                        </div>
+                    </article>
+                    <article class="blog__item">
+                        <div class="blog__item-img">
+                            <img src="/img/blog_02.jpg" alt="blog_02">
+                        </div>
+                        <div class="blog__item-text">
+                            <div class="blog__item-header">
+                                <h6><a href="#">Being more productive with Notion.</a></h6>
+                                <time datetime="2021-02-19">Feb 19, 2021</time>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante
+                                scelerisque laoreet consectetur adipiscing elit. Fusce finibus ...
+                            </p>
+                            <a href="#" class="blog__item-link">Continue Reading</a>
+                        </div>
+                    </article>
+                    <article class="blog__item">
+                        <div class="blog__item-img">
+                            <img src="/img/blog_03.jpg" alt="blog_03">
+                        </div>
+                        <div class="blog__item-text">
+                            <div class="blog__item-header">
+                                <h6><a href="#">Beginners guide to adobe illustrator</a></h6>
+                                <time datetime="2021-06-15">Aug 8, 2020</time>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante
+                                scelerisque laoreet. Fusce finibus ...
+                            </p>
+                            <a href="#" class="blog__item-link">Continue Reading</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="testimonials section" id="testimonials">
+            <div class="wrapper">
+                <div class="section__header">
+                    <div class="header_block">
+                        <span>My clients</span>
+                        <h2>Testimonials</h2>
+                    </div>
+                </div>
+                <div class="testimonials__content swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonials__item">
+                                <div class="testimonials__item-img">
+                                    <img src="/img/testimonials_01.jpg" alt="testimonials-01">
+                                </div>
+                                <div class="testimonials__item-text">
+                                    <p>
+                                        We were very pleased to hear how you resolved our website's user interface
+                                        issues and challenges.
+                                    </p>
+                                    <div class="testimonials__item-header">
+                                        <h6>Amelia Miller</h6>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__item">
+                                <div class="testimonials__item-img">
+                                    <img src="/img/testimonials_02.jpg" alt="testimonials-02">
+                                </div>
+                                <div class="testimonials__item-text">
+                                    <p>
+                                        I’m glad I decided to work with you. The project was delivered on time with all
+                                        the requirements.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <div class="testimonials__item-header">
+                                        <h6>James Delaney</h6>
+                                        <span>Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__item">
+                                <div class="testimonials__item-img">
+                                    <img src="/img/testimonials_03.jpg" alt="testimonials-03">
+                                </div>
+                                <div class="testimonials__item-text">
+                                    <p>
+                                        The management of our projects was always faced with difficulties, but you
+                                        handled these well.
+                                    </p>
+                                    <div class="testimonials__item-header">
+                                        <h6>Isabella Bennett</h6>
+                                        <span>Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__item">
+                                <div class="testimonials__item-img">
+                                    <img src="/img/testimonials_01.jpg" alt="testimonials-01">
+                                </div>
+                                <div class="testimonials__item-text">
+                                    <p>
+                                        We were very pleased to hear how you resolved our website's user interface
+                                        issues and challenges.
+                                    </p>
+                                    <div class="testimonials__item-header">
+                                        <h6>Amelia Miller</h6>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__item">
+                                <div class="testimonials__item-img">
+                                    <img src="/img/testimonials_02.jpg" alt="testimonials-02">
+                                </div>
+                                <div class="testimonials__item-text">
+                                    <p>
+                                        I’m glad I decided to work with you. The project was delivered on time with all
+                                        the requirements.
+                                    </p>
+                                    <div class="testimonials__item-header">
+                                        <h6>James Delaney</h6>
+                                        <span>Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__item">
+                                <div class="testimonials__item-img">
+                                    <img src="/img/testimonials_03.jpg" alt="testimonials-03">
+                                </div>
+                                <div class="testimonials__item-text">
+                                    <p>
+                                        The management of our projects was always faced with difficulties, but you
+                                        handled these well.
+                                    </p>
+                                    <div class="testimonials__item-header">
+                                        <h6>Isabella Bennett</h6>
+                                        <span>Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="educate section" id="educate">
+            <div class="wrapper">
+                <div class="section__header">
+                    <div class="header_block">
+                        <span>Learning Path</span>
+                        <h2>Education & Skills</h2>
+                    </div>
+                </div>
+                <div class="educate__content">
+                    <div class="educate__content-universities">
+                        <div class="educate__content-university">
+                            <h5>Kingston university</h5>
+                            <span class="degree">Master's degree - Software Engineering</span>
+                            <span class="period">2019 - 2021</span>
+                        </div>
+                        <div class="educate__content-university">
+                            <h5>Kingston university</h5>
+                            <span class="degree">Bachelor's degree - Computer Engineering</span>
+                            <span class="period">2015 - 2019</span>
+                        </div>
+                        <div class="educate__content-university">
+                            <h5>Westminster School</h5>
+                            <span class="degree">Diploma's degree - Mathematics</span>
+                            <span class="period">2013 - 2015</span>
+                        </div>
+                    </div>
+                    <div class="educate__conent-skills">
+                        <p>For 5+ years, I have been continuously learning in the field of front-end and experimenting
+                            with new technologies and frameworks, and here you can see a summary of my skills.</p>
+
+                        <div class="educate__conent-skill">
+                            <span class="skill">React</span>
+                            <span class="skill-total"><span class="skill-progress" style="width: 68%;"></span></span>
+                        </div>
+                        <div class="educate__conent-skill">
+                            <span class="skill">Angular</span>
+                            <span class="skill-total"><span class="skill-progress" style="width: 63%;"></span></span>
+                        </div>
+                        <div class="educate__conent-skill">
+                            <span class="skill">Javascript</span>
+                            <span class="skill-total"><span class="skill-progress" style="width: 85%;"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts section" id="contacts">
+            <div class="wrapper">
+                <div class="contacts__content">
+                    <form action="" method="post" class="contacts__form">
+                        <input type="text" name="user" id="user" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input type="submit" value="Send Message" class="submit-btn">
+                    </form>
+                    <address class="contacts__items">
+                        <div class="contacts__item">
+                            <div class="contacts__item-img">
+                                <img src="img/contact_01.svg" alt="pin">
+                            </div>
+                            <div class="contacts__item-text">
+                                <span>Address</span>
+                                <a href="https://goo.gl/maps/B2gzmjgZPpCNuBQP6" id="adress" target="_blank">3424 Layman Avenue,
+                                    Fayetteville, NC</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__item-img">
+                                <img src="img/contact_02.svg" alt="phone">
+                            </div>
+                            <div class="contacts__item-text">
+                                <span>Phone</span>
+                                <a href="tel:+005014141541" id="phone">+00 (501) 414-1541</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__item-img">
+                                <img src="img/contact_03.svg" alt="mailto">
+                            </div>
+                            <div class="contacts__item-text">
+                                <span>E-Mail</span>
+                                <a href="mailto:devchapter@gmail.com" id="mailto">devchapter@gmail.com</a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="wrapper">
+        <footer class="footer">
+            <div class="introduce__content-social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <!-- <p>&copy; <script>document.write(new Date().getFullYear())</script> - DevChapter</p> -->
+            <p class="copy">&copy; <span id="year"></span> - DevChapter</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
