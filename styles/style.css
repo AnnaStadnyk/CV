@@ -409,15 +409,13 @@ h6 a:active {
     transition: all 0.3s ease;
 }
 
-.expirience__content-tab.active,
-.expirience__content-tab:hover {
+.expirience__content-tab.active {
     background-color: var(--white);
     color: var(--purple);
     border-radius: 0.25em;
 }
 
-.expirience__content-tab.active::after,
-.expirience__content-tab:hover.expirience__content-tab::after {
+.expirience__content-tab.active::after{
     font-family: "Font Awesome 5 Free";
     content: "\f054";
     font-weight: 900;
