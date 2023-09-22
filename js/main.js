@@ -103,12 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-// document.querySelectorAll('.menu-dropdown a').forEach(item => {
-//     item.addEventListener('click', (e) => {
-//         e.stopPropagation;
-//     })
-// })
-
 
 function openMenu() {
     document.querySelector('body').classList.toggle('lock');
@@ -122,11 +116,6 @@ function expirienceChangeView() {
         document.querySelectorAll('.expirience__content-tab').forEach(item => {
             document.querySelector(`.firm__${item.dataset['firm']}`).insertAdjacentElement('beforebegin', item);
         })
-        // var fragment = document.createDocumentFragment();
-        // document.querySelectorAll('.dropdown-link').forEach(item => {
-        //     fragment.appendChild(item);
-        // })
-        // document.querySelector('.menu-list').appendChild(fragment);
         const menuList = document.querySelector('.menu-list');
         document.querySelectorAll('.dropdown-link').forEach(item => {
             menuList.insertAdjacentElement('beforeend', item);
@@ -137,11 +126,6 @@ function expirienceChangeView() {
         document.querySelectorAll('.expirience__content-tab').forEach(item => {
             firmBlock.insertAdjacentElement('beforeend', item);
         })
-        // var fragment = document.createDocumentFragment();
-        // document.querySelectorAll('.dropdown-link').forEach(item => {
-        //     fragment.appendChild(item);
-        // })
-        // document.querySelector('.menu-dropdown').appendChild(fragment);
         const menuDropdown = document.querySelector('.menu-dropdown');
         document.querySelectorAll('.dropdown-link').forEach(item => {
             menuDropdown.insertAdjacentElement('beforeend', item);
