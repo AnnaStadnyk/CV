@@ -406,19 +406,22 @@ h6 a:active {
     display: flex;
     /* for "after" */
     justify-content: space-between;
+    transition: all 0.3s ease;
 }
 
-.expirience__content-tab.active {
+.expirience__content-tab.active,
+.expirience__content-tab:hover {
     background-color: var(--white);
     color: var(--purple);
     border-radius: 0.25em;
 }
 
-.expirience__content-tab.active::after {
+.expirience__content-tab.active::after,
+.expirience__content-tab:hover.expirience__content-tab::after {
     font-family: "Font Awesome 5 Free";
-    content: "\f138";
+    content: "\f054";
     font-weight: 900;
-    color: var(--purple);
+    font-size: 1rem;
 }
 
 .expirience__content-items {
@@ -427,11 +430,16 @@ h6 a:active {
 }
 
 .expirience__content-item.tabs {
-    display: none;
+    display: grid;
+    grid-template-rows: 0fr;
 }
 
 .expirience__content-item.tabs.active {
-    display: block;
+    grid-template-rows: 1fr;
+}
+
+.tabs__wrapper {
+    overflow: hidden;
 }
 
 .expirience__content-staff {
@@ -579,9 +587,13 @@ h5 a:active,
 
 /* "BLOG" SECTION END */
 /* "TESTIMONIALS" SECTION BEGIN */
-
+.testimonials .swiper {
+    width: 100%;
+    height: auto;
+}
 
 .testimonials .swiper-slide {
+    height: auto;
     padding-top: 3rem;
 }
 
@@ -617,9 +629,9 @@ h5 a:active,
     flex-direction: column;
 }
 
-/* .testimonials__item-text p{
+.testimonials__item-text p {
     flex: 1 1 auto;
-} */
+}
 
 .testimonials__item-text span {
     color: var(--cinder);
@@ -840,20 +852,25 @@ textarea {
     .expirience__content-tabs {
         padding-top: clamp(4.5rem, 3.8534rem + 3.4483vw, 6.5rem);
     }
+
     .expirience__content-items {
         padding-top: 0;
     }
+
     .expirience__content-item.active {
         padding: clamp(1.5rem, 0.6652rem + 1.7391vw, 2rem) 2rem;
+    }
+
+    .expirience__content-item.tabs {
+        transition: grid-template-rows 0.3s ease;
     }
 
     .expirience__content-tab::after {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        content: "\f138";
+        content: "\f054";
         color: var(--purple);
-        /* background-color: var(--purple);
-        color: var(--white); */
+        transition: all 0.3s ease;
     }
 
     .expirience__content-tab.active::after {

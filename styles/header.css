@@ -27,7 +27,7 @@
     width: 114px;
 }
 
-.header__logo img {
+.header__logo object{
     width: 100%;
     height: 100%;
 }

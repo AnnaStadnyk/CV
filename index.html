@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 
             <div class="header__wrapper wrapper">
                 <a href="#" class="header__logo">
-                    <img src="img/Logo.svg" alt="Logotype">
+                    <object data="img/Logo.svg" type="image/svg+xml"></object>
                 </a>
                 <nav class="menu">
                     <ul class="menu-list">
@@ -36,7 +36,8 @@
 
                         <li id="menu-dots" class="menu-link"><span>...</span>
                             <ul class="menu-dropdown">
-                                <li class="dropdown-link"><a href="#testimonials" class="menu-link">Testimonials</a></li>
+                                <li class="dropdown-link"><a href="#testimonials" class="menu-link">Testimonials</a>
+                                </li>
                                 <li class="dropdown-link"><a href="#educate" class="menu-link">Educate</a></li>
                                 <li class="dropdown-link"><a href="#contacts" class="menu-link">Contacts</a></li>
                             </ul>
@@ -135,7 +136,7 @@
                     <div class="swiper-wrapper">
                         <div class="portfolios__item swiper-slide">
                             <div class="portfolios__item-img">
-                                <img src="/img/portfolio_01.jpg" alt="portfolio_01">
+                                <img src="img/portfolio_01.jpg" alt="portfolio_01">
                             </div>
                             <div class="portfolios__item-text">
                                 <h6><a href="#">Agency Website.</a></h6>
@@ -145,7 +146,7 @@
                         </div>
                         <div class="portfolios__item swiper-slide">
                             <div class="portfolios__item-img">
-                                <img src="/img/portfolio_02.jpg" alt="portfolio_02">
+                                <img src="img/portfolio_02.jpg" alt="portfolio_02">
                             </div>
                             <div class="portfolios__item-text">
                                 <h6><a href="#">Dashboard Website.</a></h6>
@@ -155,7 +156,7 @@
                         </div>
                         <div class="portfolios__item swiper-slide">
                             <div class="portfolios__item-img">
-                                <img src="/img/portfolio_03.jpg" alt="portfolio_03">
+                                <img src="img/portfolio_03.jpg" alt="portfolio_03">
                             </div>
                             <div class="portfolios__item-text">
                                 <h6><a href="#">Support Center Website.</a></h6>
@@ -165,7 +166,7 @@
                         </div>
                         <div class="portfolios__item swiper-slide">
                             <div class="portfolios__item-img">
-                                <img src="/img/portfolio_01.jpg" alt="portfolio_01">
+                                <img src="img/portfolio_01.jpg" alt="portfolio_01">
                             </div>
                             <div class="portfolios__item-text">
                                 <h6><a href="#">Agency Website.</a></h6>
@@ -175,7 +176,7 @@
                         </div>
                         <div class="portfolios__item swiper-slide">
                             <div class="portfolios__item-img">
-                                <img src="/img/portfolio_02.jpg" alt="portfolio_02">
+                                <img src="img/portfolio_02.jpg" alt="portfolio_02">
                             </div>
                             <div class="portfolios__item-text">
                                 <h6><a href="#">Dashboard Website.</a></h6>
@@ -185,7 +186,7 @@
                         </div>
                         <div class="portfolios__item swiper-slide">
                             <div class="portfolios__item-img">
-                                <img src="/img/portfolio_03.jpg" alt="portfolio_03">
+                                <img src="img/portfolio_03.jpg" alt="portfolio_03">
                             </div>
                             <div class="portfolios__item-text">
                                 <h6><a href="#">Support Center Website.</a></h6>
@@ -207,86 +208,100 @@
                         <h2>Work Experices</h2>
                     </div>
                     <div class="expirience__content-tabs">
-                        <button class="expirience__content-tab active" data-firm="apple">Apple <i class="icon-right"></i></button>
+                        <button class="expirience__content-tab active" data-firm="apple">Apple</button>
                         <button class="expirience__content-tab" data-firm="microsoft">Microsoft</button>
                         <button class="expirience__content-tab" data-firm="facebook">Facebook</button>
                         <button class="expirience__content-tab" data-firm="slack">Slack</button>
                     </div>
                     <div class="expirience__content-items">
                         <div class="expirience__content-item firm__apple tabs active">
-                            <div class="expirience__content-staff">
-                                <h5>Front-end Developer <a href="">Apple .Inc</a></h5>
-                                <span class="adress">California, United States</span>
-                                <span class="period">Nov 2020 - Present · Full-time</span>
-                                <div class="expirience__content-staff-links">
-                                    <a href="" class="portfolios__item-link">Swift</a>
-                                    <a href="" class="portfolios__item-link">Go</a>
+                            <div class="tabs__wrapper">
+                                <div class="expirience__content-staff">
+                                    <h5>Front-end Developer <a href="">Apple .Inc</a></h5>
+                                    <span class="adress">California, United States</span>
+                                    <span class="period">Nov 2020 - Present · Full-time</span>
+                                    <div class="expirience__content-staff-links">
+                                        <a href="" class="portfolios__item-link">Swift</a>
+                                        <a href="" class="portfolios__item-link">Go</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="expirience__content-duty">
-                                <ul class="expirience__content-duty-list">
-                                    <li>Improving overall website performance for mobile users.</li>
-                                    <li>Collaborate with back-end developers and web designers to improve usability</li>
-                                    <li>Add voice search feature for mobile app.</li>
-                                    <li>Developing an admin panel to manage contents, users, products and Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem, cum ullam in voluptatum tenetur accusamus iure sed nobis modi.</li>
-                                </ul>
+                                <div class="expirience__content-duty">
+                                    <ul class="expirience__content-duty-list">
+                                        <li>Improving overall website performance for mobile users.</li>
+                                        <li>Collaborate with back-end developers and web designers to improve usability
+                                        </li>
+                                        <li>Add voice search feature for mobile app.</li>
+                                        <li>Developing an admin panel to manage contents, users, products and Lorem
+                                            ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem, cum ullam
+                                            in voluptatum tenetur accusamus iure sed nobis modi.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="expirience__content-item firm__microsoft tabs">
-                            <div class="expirience__content-staff">
-                                <h5>Front-end Developer <a href="">Microsoft</a></h5>
-                                <span class="adress">California, United States</span>
-                                <span class="period">Nov 2020 - Present · Full-time</span>
-                                <div class="expirience__content-staff-links">
-                                    <a href="" class="portfolios__item-link">Swift</a>
-                                    <a href="" class="portfolios__item-link">Go</a>
+                            <div class="tabs__wrapper">
+                                <div class="expirience__content-staff">
+                                    <h5>Front-end Developer <a href="">Microsoft</a></h5>
+                                    <span class="adress">California, United States</span>
+                                    <span class="period">Nov 2020 - Present · Full-time</span>
+                                    <div class="expirience__content-staff-links">
+                                        <a href="" class="portfolios__item-link">Swift</a>
+                                        <a href="" class="portfolios__item-link">Go</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="expirience__content-duty">
-                                <ul class="expirience__content-duty-list">
-                                    <li>Improving overall website performance for mobile users.</li>
-                                    <li>Collaborate with back-end developers and web designers to improve usability</li>
-                                    <li>Add voice search feature for mobile app.</li>
-                                    <li>Developing an admin panel to manage contents, users, products and ...</li>
-                                </ul>
+                                <div class="expirience__content-duty">
+                                    <ul class="expirience__content-duty-list">
+                                        <li>Improving overall website performance for mobile users.</li>
+                                        <li>Collaborate with back-end developers and web designers to improve usability
+                                        </li>
+                                        <li>Add voice search feature for mobile app.</li>
+                                        <li>Developing an admin panel to manage contents, users, products and ...</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="expirience__content-item firm__facebook tabs">
-                            <div class="expirience__content-staff">
-                                <h5>Front-end Developer <a href="">Facebook</a></h5>
-                                <span class="adress">California, United States</span>
-                                <span class="period">Nov 2020 - Present · Full-time</span>
-                                <div class="expirience__content-staff-links">
-                                    <a href="" class="portfolios__item-link">Swift</a>
-                                    <a href="" class="portfolios__item-link">Go</a>
+                            <div class="tabs__wrapper">
+                                <div class="expirience__content-staff">
+                                    <h5>Front-end Developer <a href="">Facebook</a></h5>
+                                    <span class="adress">California, United States</span>
+                                    <span class="period">Nov 2020 - Present · Full-time</span>
+                                    <div class="expirience__content-staff-links">
+                                        <a href="" class="portfolios__item-link">Swift</a>
+                                        <a href="" class="portfolios__item-link">Go</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="expirience__content-duty">
-                                <ul class="expirience__content-duty-list">
-                                    <li>Improving overall website performance for mobile users.</li>
-                                    <li>Collaborate with back-end developers and web designers to improve usability</li>
-                                    <li>Add voice search feature for mobile app.</li>
-                                    <li>Developing an admin panel to manage contents, users, products and ...</li>
-                                </ul>
+                                <div class="expirience__content-duty">
+                                    <ul class="expirience__content-duty-list">
+                                        <li>Improving overall website performance for mobile users.</li>
+                                        <li>Collaborate with back-end developers and web designers to improve usability
+                                        </li>
+                                        <li>Add voice search feature for mobile app.</li>
+                                        <li>Developing an admin panel to manage contents, users, products and ...</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="expirience__content-item firm__slack tabs">
-                            <div class="expirience__content-staff">
-                                <h5>Front-end Developer <a href="">Slack</a></h5>
-                                <span class="adress">California, United States</span>
-                                <span class="period">Nov 2020 - Present · Full-time</span>
-                                <div class="expirience__content-staff-links">
-                                    <a href="" class="portfolios__item-link">Swift</a>
-                                    <a href="" class="portfolios__item-link">Go</a>
+                            <div class="tabs__wrapper">
+                                <div class="expirience__content-staff">
+                                    <h5>Front-end Developer <a href="">Slack</a></h5>
+                                    <span class="adress">California, United States</span>
+                                    <span class="period">Nov 2020 - Present · Full-time</span>
+                                    <div class="expirience__content-staff-links">
+                                        <a href="" class="portfolios__item-link">Swift</a>
+                                        <a href="" class="portfolios__item-link">Go</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="expirience__content-duty">
-                                <ul class="expirience__content-duty-list">
-                                    <li>Improving overall website performance for mobile users.</li>
-                                    <li>Collaborate with back-end developers and web designers to improve usability</li>
-                                    <li>Add voice search feature for mobile app.</li>
-                                    <li>Developing an admin panel to manage contents, users, products and ...</li>
-                                </ul>
+                                <div class="expirience__content-duty">
+                                    <ul class="expirience__content-duty-list">
+                                        <li>Improving overall website performance for mobile users.</li>
+                                        <li>Collaborate with back-end developers and web designers to improve usability
+                                        </li>
+                                        <li>Add voice search feature for mobile app.</li>
+                                        <li>Developing an admin panel to manage contents, users, products and ...</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -305,7 +320,7 @@
                 <div class="blog__content">
                     <article class="blog__item">
                         <div class="blog__item-img">
-                            <img src="/img/blog_01.jpg" alt="blog_01">
+                            <img src="img/blog_01.jpg" alt="blog_01">
                         </div>
                         <div class="blog__item-text">
                             <div class="blog__item-header">
@@ -321,7 +336,7 @@
                     </article>
                     <article class="blog__item">
                         <div class="blog__item-img">
-                            <img src="/img/blog_02.jpg" alt="blog_02">
+                            <img src="img/blog_02.jpg" alt="blog_02">
                         </div>
                         <div class="blog__item-text">
                             <div class="blog__item-header">
@@ -337,7 +352,7 @@
                     </article>
                     <article class="blog__item">
                         <div class="blog__item-img">
-                            <img src="/img/blog_03.jpg" alt="blog_03">
+                            <img src="img/blog_03.jpg" alt="blog_03">
                         </div>
                         <div class="blog__item-text">
                             <div class="blog__item-header">
@@ -369,7 +384,7 @@
                         <div class="swiper-slide">
                             <div class="testimonials__item">
                                 <div class="testimonials__item-img">
-                                    <img src="/img/testimonials_01.jpg" alt="testimonials-01">
+                                    <img src="img/testimonials_01.jpg" alt="testimonials-01">
                                 </div>
                                 <div class="testimonials__item-text">
                                     <p>
@@ -386,7 +401,7 @@
                         <div class="swiper-slide">
                             <div class="testimonials__item">
                                 <div class="testimonials__item-img">
-                                    <img src="/img/testimonials_02.jpg" alt="testimonials-02">
+                                    <img src="img/testimonials_02.jpg" alt="testimonials-02">
                                 </div>
                                 <div class="testimonials__item-text">
                                     <p>
@@ -404,7 +419,7 @@
                         <div class="swiper-slide">
                             <div class="testimonials__item">
                                 <div class="testimonials__item-img">
-                                    <img src="/img/testimonials_03.jpg" alt="testimonials-03">
+                                    <img src="img/testimonials_03.jpg" alt="testimonials-03">
                                 </div>
                                 <div class="testimonials__item-text">
                                     <p>
@@ -421,7 +436,7 @@
                         <div class="swiper-slide">
                             <div class="testimonials__item">
                                 <div class="testimonials__item-img">
-                                    <img src="/img/testimonials_01.jpg" alt="testimonials-01">
+                                    <img src="img/testimonials_01.jpg" alt="testimonials-01">
                                 </div>
                                 <div class="testimonials__item-text">
                                     <p>
@@ -438,7 +453,7 @@
                         <div class="swiper-slide">
                             <div class="testimonials__item">
                                 <div class="testimonials__item-img">
-                                    <img src="/img/testimonials_02.jpg" alt="testimonials-02">
+                                    <img src="img/testimonials_02.jpg" alt="testimonials-02">
                                 </div>
                                 <div class="testimonials__item-text">
                                     <p>
@@ -455,7 +470,7 @@
                         <div class="swiper-slide">
                             <div class="testimonials__item">
                                 <div class="testimonials__item-img">
-                                    <img src="/img/testimonials_03.jpg" alt="testimonials-03">
+                                    <img src="img/testimonials_03.jpg" alt="testimonials-03">
                                 </div>
                                 <div class="testimonials__item-text">
                                     <p>
@@ -537,7 +552,8 @@
                             </div>
                             <div class="contacts__item-text">
                                 <span>Address</span>
-                                <a href="https://goo.gl/maps/B2gzmjgZPpCNuBQP6" id="adress" target="_blank">3424 Layman Avenue,
+                                <a href="https://goo.gl/maps/B2gzmjgZPpCNuBQP6" id="adress" target="_blank">3424 Layman
+                                    Avenue,
                                     Fayetteville, NC</a>
                             </div>
                         </div>
@@ -573,13 +589,12 @@
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
             </div>
-            <!-- <p>&copy; <script>document.write(new Date().getFullYear())</script> - DevChapter</p> -->
             <p class="copy">&copy; <span id="year"></span> - DevChapter</p>
         </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
